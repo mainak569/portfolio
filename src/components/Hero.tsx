@@ -4,6 +4,7 @@ import { Github, Linkedin, Mail, ExternalLink } from 'lucide-react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useState, useRef } from 'react';
 import * as THREE from 'three';
+import myImage from '../assets/your-image.jpeg';
 
 const Hero3DText = () => {
   const meshRef = useRef<THREE.Mesh>(null);
@@ -194,8 +195,8 @@ export const Hero = () => {
 
               <div className="absolute inset-0 flex items-center justify-center">
                 <img
-                  src="/your-image.jpeg"   // replace with your actual image
-                  alt="Profile"
+                  src={myImage}
+                  alt="MD"
                   className="w-64 h-64 rounded-full object-cover border-4 border-primary/40 shadow-xl"
                 />
               </div>
